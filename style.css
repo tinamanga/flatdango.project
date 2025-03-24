@@ -33,7 +33,7 @@ main {
 }
 
 #films-list {
-  width: 30%;
+  width: 40%;
 }
 
 #films li.sold-out {
@@ -45,7 +45,7 @@ button.details {
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 7px;
+  
   cursor: pointer;
 }
 button.deletebtn {
@@ -53,7 +53,7 @@ button.deletebtn {
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 7px;
+ 
   cursor: pointer;
 }
 button.buyticket {
@@ -80,6 +80,7 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   gap: 20px; /* Adds some space between the two columns */
+  margin-top: 100px;
 }
 
 /* Left */
@@ -94,7 +95,7 @@ button:disabled {
 
 /* Right */
 #movie-details {
-  width: 45%;  /* Take up 45% of the width */
+  width: 400px;  /* Take up 45% of the width */
   padding: 20px;
   border: 1px solid #ddd;  /* Optional: Add a border for clarity */
 }
@@ -105,4 +106,38 @@ button:disabled {
   background-color: #f0f0f0;
   cursor: pointer;
   border-radius: 5px;
+}
+
+
+/* Top Navigation Bar styles */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 5px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+}
+
+.top-nav .headline h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Add some space between title and subtitle */
+  color: #0563bb;
+}
+
+.top-nav .headline p {
+  font-size: 16px;
+  margin: 0;
+  font-style: none;
+  color: #ddd; /* Lighter color for the subtitle */
+}
+.top-nav .headline{
+  padding-left: 20px;
 }

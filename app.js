@@ -25,6 +25,7 @@ function fetchFilms() {
 
 // Display selected movie details
 function showMovieDetails(film) {
+
   moviePoster.src = film.poster;
   movieTitle.textContent = film.title;
   movieRuntime.textContent = `Runtime: ${film.runtime} minutes`;
@@ -103,6 +104,7 @@ function renderFilm(film) {
     detailsButton.textContent = 'Show details';
     detailsButton.classList.add('details');
     detailsButton.onclick = () => showMovieDetails(film);
+    li.append(" ");
     li.appendChild(detailsButton);
   
     filmsList.appendChild(li);
@@ -112,7 +114,7 @@ function renderFilm(film) {
   deleteButton.classList.add('deletebtn')
   deleteButton.textContent = 'Delete';
   deleteButton.onclick = () => deleteFilm(film.id, li);
-  li.append(" ");
+
   li.appendChild(deleteButton);
 
   filmsList.appendChild(li);

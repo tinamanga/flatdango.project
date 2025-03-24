@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flatadango</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Styling for the sold-out films */
-      .sold-out {
-        color: grey; /* Change the text color to grey for sold-out films */
-        text-decoration: line-through; /* Add a line-through effect to indicate sold out */
-      }
-    </style>
   </head>
   <body>
-    <h1>Flatadango Movie Theater</h1>
+    <nav class="top-nav">
+      <div class="headline">
+        <h1>FLATDANGO</h1>
+        <p>Buy Movie tickets</p>
+      </div>
+    </nav>
 
     <div class="container">
       <!-- Left side: Movie list -->
+
       <ul id="films">
+        <h3>Movie title will go here...</h3>
         <!-- Movies will be dynamically added here -->
       </ul>
 
-      <div id="movie-img"><img id="movie-poster" src="" alt="Movie Poster" /></div>
+      <div id="movie-img">
+        <img
+          id="movie-poster"
+          src="https://fakeimg.pl/400x600?text=Image+here"
+          alt="Movie Poster"
+        />
+      </div>
       <!-- Right side: Movie details -->
+
+
       <div id="movie-details">
         
-        <h2 id="movie-title"></h2>
-        <p id="movie-runtime"></p>
-        <p id="movie-showtime"></p>
-        <p id="movie-description"></p>
+        <h2 id="movie-title">[MOVIE TITLE]</h2>
+        <p id="movie-runtime">[RUNTIME] Minutes</p>
+        <p id="movie-showtime">[SHOWTIME]</p>
+        <p id="movie-description">[MOVIE DESCRIPTION GOES HERE]</p>
         <button id="buy-ticket" class="buyticket">Buy Ticket</button>
         <p id="available-tickets"></p>
       </div>
