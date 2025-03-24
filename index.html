@@ -18,7 +18,7 @@
       <!-- Left side: Movie list -->
 
       <ul id="films">
-        <h3>Movie title will go here...</h3>
+        <h2>[MOVIE TITLE GOES HERE]</h2>
         <!-- Movies will be dynamically added here -->
       </ul>
 
@@ -33,13 +33,21 @@
 
 
       <div id="movie-details">
+        <div class="card">
+          <div class="card-header">
+            <h2 id="movie-title">[MOVIE TITLE]</h2>
+            <p style="font-size: 15px;" id="movie-runtime">[RUNTIME] Minutes</p>
+          </div>
+          <div class="card-body">
+            <p id="movie-showtime">[SHOWTIME]</p>
+            <p id="movie-description">[MOVIE DESCRIPTION GOES HERE]</p>
+            <button id="buy-ticket" class="buyticket">Buy Ticket</button>
+            <p id="available-tickets"></p>
+          </div>
+        </div>
+         
+  
         
-        <h2 id="movie-title">[MOVIE TITLE]</h2>
-        <p id="movie-runtime">[RUNTIME] Minutes</p>
-        <p id="movie-showtime">[SHOWTIME]</p>
-        <p id="movie-description">[MOVIE DESCRIPTION GOES HERE]</p>
-        <button id="buy-ticket" class="buyticket">Buy Ticket</button>
-        <p id="available-tickets"></p>
       </div>
     </div>
     <script src="app.js"></script>

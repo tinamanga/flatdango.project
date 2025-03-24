@@ -23,9 +23,6 @@ main {
   width: 100%;
 }
 
-#movie-details {
-  width: 60%;
-}
 
 #movie-img img {
   width: 400px;
@@ -91,12 +88,12 @@ button:disabled {
   min-width: 300px; 
   padding: 0;
   margin: 0;
+  border: 1px solid #ddd; 
 }
 
 /* Right */
 #movie-details {
   width: 400px;  /* Take up 45% of the width */
-  padding: 20px;
   border: 1px solid #ddd;  /* Optional: Add a border for clarity */
 }
 
@@ -140,4 +137,45 @@ button:disabled {
 }
 .top-nav .headline{
   padding-left: 20px;
+}
+
+
+
+
+/* Movie details card */
+
+/* Card Container Styling */
+.card {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(14, 131, 226, 0.1);
+  background-color: white;
+  overflow: hidden; /* Ensure content doesn't spill outside */
+  
+}
+
+
+/* Card Header (Title) Styling */
+.card-header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-body p {
+  margin: 0;
+  line-height: 2.5;
 }
