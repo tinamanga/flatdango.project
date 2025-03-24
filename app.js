@@ -112,7 +112,7 @@ function renderFilm(film) {
   deleteButton.classList.add('deletebtn')
   deleteButton.textContent = 'Delete';
   deleteButton.onclick = () => deleteFilm(film.id, li);
-  
+  li.append(" ");
   li.appendChild(deleteButton);
 
   filmsList.appendChild(li);
