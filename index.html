@@ -31,23 +31,25 @@
       </div>
       <!-- Right side: Movie details -->
 
-
       <div id="movie-details">
         <div class="card">
           <div class="card-header">
             <h2 id="movie-title">[MOVIE TITLE]</h2>
-            <p style="font-size: 15px;" id="movie-runtime">[RUNTIME] Minutes</p>
+            <p style="font-size: 15px" id="movie-runtime">[RUNTIME] Minutes</p>
           </div>
           <div class="card-body">
             <p id="movie-showtime">[SHOWTIME]</p>
             <p id="movie-description">[MOVIE DESCRIPTION GOES HERE]</p>
-            <button id="buy-ticket" class="buyticket">Buy Ticket</button>
+            
+            <div class="input-container">
+              <button id="buy-ticket" class="buyticket">Buy Ticket</button>
+              <button id="decrease" class="btn">-</button>
+              <input type="number" id="number" min="1" value="1" />
+              <button id="increase" class="btn">+</button>
+            </div>
             <p id="available-tickets"></p>
           </div>
         </div>
-         
-  
-        
       </div>
     </div>
     <script src="app.js"></script>
