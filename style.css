@@ -40,14 +40,27 @@ main {
   color: red;
 }
 
-button {
+button.details {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
 }
-
+button.deletebtn {
+  background-color: #ec1515;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button.buyticket {
+  background-color: #0563bb;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
 button:disabled {
   background-color: #ccc;
 }
@@ -59,3 +72,10 @@ button:disabled {
 
 
 /* Grid styling */
+
+/* Container to hold both the movie list and details */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds some space between the two columns */
+}

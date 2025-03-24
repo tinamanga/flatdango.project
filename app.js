@@ -99,7 +99,9 @@ function renderFilm(film) {
 
     // Create and append details button
     const detailsButton = document.createElement('button');
+   
     detailsButton.textContent = 'Show details';
+    detailsButton.classList.add('details');
     detailsButton.onclick = () => showMovieDetails(film);
     li.appendChild(detailsButton);
   
@@ -107,8 +109,10 @@ function renderFilm(film) {
 
   // Create and append delete button
   const deleteButton = document.createElement('button');
+  deleteButton.classList.add('deletebtn')
   deleteButton.textContent = 'Delete';
   deleteButton.onclick = () => deleteFilm(film.id, li);
+  
   li.appendChild(deleteButton);
 
   filmsList.appendChild(li);
