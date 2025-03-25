@@ -56,7 +56,7 @@ function showMovieDetails(film) {
 
   numberInput.value=1;
   
-  alert(numberInput.value);
+  // alert(numberInput.value);
   // Add event listeners for the + and - buttons
   increaseBtn.addEventListener("click", () => {
     // Increase the number by 1
