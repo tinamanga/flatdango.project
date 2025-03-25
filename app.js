@@ -15,13 +15,6 @@ const availableTickets = document.getElementById("available-tickets");
   const numberInput = document.getElementById("number");
   // Store the initial value
 
-  const initialValue = 1;  // You can set the default value to any number you like
-
-// Function to reset input value
-function resetInput() {
-  numberInput.value = initialValue;  // Reset to the initial value
-}
-
 // Fetch films data from the server (GET /films)
 function fetchFilms() {
   fetch("http://localhost:3000/films")
@@ -39,6 +32,7 @@ function fetchFilms() {
 // Display selected movie details
 function showMovieDetails(film) {
  
+  
   moviePoster.src = film.poster;
   movieTitle.textContent = film.title;
   movieRuntime.textContent = `Runtime: ${film.runtime} minutes`;
@@ -60,18 +54,21 @@ function showMovieDetails(film) {
 
 
 
+  numberInput.value=1;
   
-  
+  alert(numberInput.value);
   // Add event listeners for the + and - buttons
   increaseBtn.addEventListener("click", () => {
     // Increase the number by 1
-   
+  
     if (numberInput.value < ticketsLeft) {
+     
       numberInput.value = parseInt(numberInput.value) + 1;
     }
   });
 
   decreaseBtn.addEventListener("click", () => {
+    
    
     // Decrease the number by 1
     if (numberInput.value > 1) {
@@ -148,7 +145,7 @@ function renderFilm(film) {
 
   detailsButton.textContent = "Show details";
   detailsButton.classList.add("details");
-  detailsButton.onclick=()=>resetInput();
+
   detailsButton.onclick = () => showMovieDetails(film);
   li.append(" ");
   li.appendChild(detailsButton);
